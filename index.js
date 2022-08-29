@@ -7,13 +7,30 @@ let second = null
 let convertBtn = document.getElementById("convert-btn");
 convertBtn.addEventListener("click", function(){
     let inputEl = document.getElementById("input-el").value;
+    document.getElementById("input-el").value = ""
      first = inputEl * 3.281;
       second = inputEl / 3.281;
+
      lengthEl.innerText = `${inputEl} meters = ${first.toFixed(3)} feet | ${inputEl} feet = ${second.toFixed(3)} meters`;
+
+
      first = inputEl * 0.264;
      second = inputEl / 0.264;
+
      volumeEl.innerText = `${inputEl} liters = ${first.toFixed(3)} gallons | ${inputEl} gallons = ${second.toFixed(3)} liters`;
+
+
      first = inputEl * 2.204;
      second = inputEl / 2.204;
+
      massEl.innerText = `${inputEl} kilos = ${first.toFixed(3)} pounds | ${inputEl} pounds = ${second.toFixed(3)} kilos` ;
+
+     if(isNaN(inputEl)){
+        let inputEl = document.getElementById("input-el").value;
+        inputEl = "";
+        lengthEl.innerText = `This is not a number, can't convert, Input a number`;
+        volumeEl.innerText = `This is not a number, can't convert, Input a number`;
+        massEl.innerText = `This is not a number, can't convert, Input a number` ;  
+    }
+  
 })

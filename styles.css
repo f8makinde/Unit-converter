@@ -2,6 +2,7 @@ body {
   margin: 0;
   text-align: center;
   background: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hero {
@@ -22,6 +23,10 @@ input{
   background: #6943fe;
   color: white;
   border: 2px solid rgba(178, 149, 255, 1)
+}
+input[type="text"]{
+  font-size: 20px;
+  text-align: center;
 }
 button{
    padding: 10px 30px;

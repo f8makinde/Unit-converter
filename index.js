@@ -30,7 +30,7 @@ convertBtn.addEventListener("click", function(){
      first =  (9/5 * inputEl) + 32;
      second =  (inputEl - 32) * (5/9);
 
-     temperatureEl.innerText = `${inputEl} Celsuis = ${first.toFixed(3)} fahrenheit | ${inputEl} fahrenheit = ${second.toFixed(3)} celsuis`;
+     temperatureEl.innerText = `${inputEl} Celsius = ${first.toFixed(3)} fahrenheit | ${inputEl} fahrenheit = ${second.toFixed(3)} celsius`;
     
      first = inputEl / 1.609;
      second = inputEl * 1.609;

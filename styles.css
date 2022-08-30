@@ -1,7 +1,6 @@
 body {
   margin: 0;
   text-align: center;
-  background: black;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -35,8 +34,13 @@ button{
   background: white;
   display: flex;
   margin: 10px auto;
+  font-weight: bold;
+  cursor: pointer;
 }
-
+button:active{
+  background: gray;
+  border: 2px solid white;
+}
 .section {
   background: white;
   padding: 5px;
